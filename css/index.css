@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Mynerve&family=Pacifico&display=swap');
+:root { 
+  --bg: #fec7d7; 
+  --white: #ffffff; 
+  --purple: #a786df; 
+  --blue-dark: #0e172c; 
+  --h1: 700 1.625rem/2rem Inter; 
+  --body1-regular: 400 1rem/1.5rem Inter; 
+  --body1-bold: 700 1rem/1.5rem Inter;    
+}
+
+body {
+  font: var(--h1);
+  margin: 0;
+  background-color: var(--bg);
+
+}
+
+h1{
+  font: var(--h1);
+  color: var(--purple);
+
+}
+
+h2{
+  font: var(--h1);
+  color: var(--blue-dark);
+  margin: 0;
+}
+
+p{
+  color: var(--blue-dark);  
+  font: var(--body1-regular);
+  opacity: 0.8;
+}
+
+ .wrapper{  
+  
+  /*outline: 1px solid red;*/
+  max-width:426px ;
+  min-width:328px ;
+  height: 100vh;
+  margin: 0 auto;    
+  display: flex;
+  align-items: center;
+}
+
+.respuesta{
+  display: none;
+}
+
+.survey-component{
+  box-sizing: border-box;
+  width: 328px;
+  height: 334px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 2.35334px solid var(--blue-dark);
+  box-shadow: 4.70669px 4.70669px 0px var(--blue-dark);
+  border-radius: 14px;
+  background-color: var(--white);*/
+
+}
+
+.survey-component form .elements{
+  
+  display: flex;
+  justify-content:space-between;
+  margin: 24px 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  }
+
+
+
+
+.option{
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border: 3px solid var(--blue-dark);
+  border-radius: 58.83px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--blue-dark);
+}
+
+.option:hover{
+  background-color: var(--purple);
+  cursor: pointer ;
+  transition: 0.4s all;
+  position: relative;
+  bottom: 2.5px;
+
+}
+
+.option:focus{  
+  background-color: var(--blue-dark);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-color: rgb(54, 103, 158) ;
+  transition: 0s all;
+}
+
+.survey-component form .send { /* .survey-component form .send {
+  width: 346px;
+  height: 47.53px;
+}*/
+  width: 280px;
+  height: 47.53px;
+  border-radius: 117.667px;
+  color: var(--white);
+  background-color: var(--blue-dark);
+  font: var(--body1-bold);
+  border: none;
+  text-align: center;
+}
+
+
+.survey-component form .send:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.debugin{
+
+}
+
+@media (min-width:750px) {
+  .survey-component {
+    width: 426px;
+    height: 397px;
+    padding:40px;
+    border-radius: 14px;
+  }
+
+  .survey-component form .send {
+    width: 346px;
+    height: 47.53px;
+  }*/
+
+
+#gracias{
+  border: 20px;
+}  }
