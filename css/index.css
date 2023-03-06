@@ -21,16 +21,20 @@ body {
 h1{
   font: var(--h1);
   color: var(--purple);
-
 }
 
 h2{
   font: var(--h1);
+  size: 26px;
+  line-height: 32px;
   color: var(--blue-dark);
-  margin: 0;
+  margin: 0%; 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 
+
 p{
+  display: flex;
   color: var(--blue-dark);  
   font: var(--body1-regular);
   opacity: 0.8;
@@ -49,22 +53,38 @@ p{
 
 .respuesta{
   display: none;
+  box-sizing: border-box;
+  width: 426px;
+  height: 421.78px;  
+  margin: 0 auto;
+  padding: 40px;
+  border: 2.35px solid var(--blue-dark);
+  box-shadow: 4.71px 4.71px 0px var(--blue-dark);
+  border-radius: 14.12px;
+  background-color: var(--white);
 }
 
 .survey-component{
+  /*display: none;*/
   box-sizing: border-box;
-  width: 328px;
-  height: 334px;
+  width: 426px;
+  height: max-content;
   margin: 0 auto;
-  padding: 24px;
-  border: 2.35334px solid var(--blue-dark);
-  box-shadow: 4.70669px 4.70669px 0px var(--blue-dark);
-  border-radius: 14px;
-  background-color: var(--white);*/
-
+  padding: 40px;
+  border: 2.35px solid var(--blue-dark);
+  box-shadow: 4.71px 4.71px 0px var(--blue-dark);
+  border-radius: 14.12px;
+  background-color: var(--white);
 }
 
-.survey-component form .elements{
+.grupo-1{
+  width: 346px;
+  height: 230px;
+  
+  
+}
+
+.elements{
   
   display: flex;
   justify-content:space-between;
@@ -77,16 +97,20 @@ p{
 
 
 .option{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  justify-content: center;
   width: 56px;
   height: 56px;
   border: 3px solid var(--blue-dark);
   border-radius: 58.83px;
   text-align: center;
-  text-decoration: none;
-  font-size: 12px;
+  background: #FFFFFF;
   color: var(--blue-dark);
-}
+  font: var(--body1-bold);
+  }
 
 .option:hover{
   background-color: var(--purple);
@@ -103,23 +127,23 @@ p{
   color: white;
   font-weight: bold;
   font-size: 15px;
-  border-color: rgb(54, 103, 158) ;
   transition: 0s all;
 }
 
-.survey-component form .send { /* .survey-component form .send {
-  width: 346px;
-  height: 47.53px;
-}*/
-  width: 280px;
-  height: 47.53px;
-  border-radius: 117.667px;
-  color: var(--white);
+.send{
+  display: flex;
+  align-items: center;
   background-color: var(--blue-dark);
   font: var(--body1-bold);
-  border: none;
-  text-align: center;
-}
+  color: #ffffff;
+  width: 346px;
+  justify-content: center;
+  height: 47.533447265625px;
+  margin: 0;
+  border-radius: 117.667px;
+  margin: 40px auto;
+  padding: 12px 14px 12px 19px;
+  }
 
 
 .survey-component form .send:hover {
@@ -127,24 +151,65 @@ p{
   cursor: pointer;
 }
 
-.debugin{
+/*.debugin{
+
+}*/
+
+
+@media (max-width:750px) {
+  .survey-component { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 328px;
+    height: 332.76px;
+    padding:0px;
+    border-radius: 14px;
+    border: 24px solid blue;
+  } 
+.send{
+  
+  border: 3px solid var(--blue-dark);
+  width: 280px;
+  height: 47.53px;
+  margin: 0 auto;
+}
+.grupo-1 {
+  border: 1.5px solid red;
+  width: 280px;
+  height: 144px;
 
 }
+.elements{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  /*width: 280px;*/
+  height: 46.93px;
+  border: 0.2px solid violet;
+  margin: 24px auto ;
 
-@media (min-width:750px) {
-  .survey-component {
-    width: 426px;
-    height: 397px;
-    padding:40px;
-    border-radius: 14px;
-  }
-
-  .survey-component form .send {
-    width: 346px;
-    height: 47.53px;
-  }*/
-
+}
+.option{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40.12px;
+  height: 40.93px;
+  border: 3px solid var(--blue-dark);
+  border-radius: 58.83px;
+  padding: 16px;
+  top: 2.15px;
+  
+}
+}
 
 #gracias{
-  border: 20px;
-}  }
+  display: flex;
+  width: 346px;
+  height: 253.78px;
+} 
